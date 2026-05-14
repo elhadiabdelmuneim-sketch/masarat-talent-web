@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Demo.css'
 
 // ── Replace with your actual API Gateway URL after Phase 4 setup ──
-const API_URL = 'https://YOUR_API_GATEWAY_ID.execute-api.us-east-1.amazonaws.com/prod/intake'
+const API_URL = 'https://88fovdccta.execute-api.us-east-1.amazonaws.com/intake'
 
 const INITIAL = {
   full_name: '',
