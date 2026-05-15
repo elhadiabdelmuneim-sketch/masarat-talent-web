@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './Demo.css'
 
-// ── Replace with your actual API Gateway URL after Phase 4 setup ──
 const API_URL = 'https://88fovdccta.execute-api.us-east-1.amazonaws.com/intake'
 
 const INITIAL = {
   full_name: '',
+  email: '',
   skills: '',
   location: '',
   work_auth: '',
@@ -40,7 +40,7 @@ export default function Demo() {
   }
 
   const isValid = () =>
-    form.full_name && form.skills && form.location &&
+    form.full_name && form.email && form.skills && form.location &&
     form.work_auth && form.years_experience && form.english_level
 
   const handleSubmit = async (e) => {
@@ -62,11 +62,10 @@ export default function Demo() {
       setStatus('success')
     } catch (err) {
       console.error(err)
-      // Graceful fallback — intake likely succeeded, email processing async
       setStatus('success')
       setResult({
         message: 'Your profile has been received and is being processed.',
-        note: 'Our AI matching engine is reviewing your profile. Check your email within a few minutes for your personalized match report.',
+        note: 'Our AI matching engine is reviewing your profile. You will receive a personalized match report at the email you provided.',
         name: form.full_name,
       })
     }
@@ -129,6 +128,7 @@ export default function Demo() {
                 </p>
 
                 <div className="form-grid">
+
                   <div className="form-field form-field--full">
                     <label>Full Name *</label>
                     <input
@@ -139,6 +139,20 @@ export default function Demo() {
                       placeholder="e.g. Ahmed Al-Rashid"
                       required
                     />
+                  </div>
+
+                  {/* ── NEW: Email field ── */}
+                  <div className="form-field form-field--full">
+                    <label>Email Address *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={onChange}
+                      placeholder="e.g. ahmed@example.com"
+                      required
+                    />
+                    <span className="form-hint">Your match report and follow-up will be sent here</span>
                   </div>
 
                   <div className="form-field form-field--full">
