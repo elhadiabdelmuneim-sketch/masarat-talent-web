@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <div className="footer__logo">
-            <img src={logoSvg} alt="Masarat Talent Logo" style={{height: '40px'}} />
+            <img src={logoSvg} alt="Masarat Talent Logo" style={{height: '70px'}} />
                         </div>
           <p className="footer__tagline italic">
             "Africa doesn't have a talent problem.<br />It has an access problem."
