@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
-
+import logoSvg from '../assets/logo.svg'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="container navbar__inner">
         {/* Logo */}
         <Link to="/" className="navbar__logo">
-          <img src="/src/assets/logo.svg" alt="Masarat Talent Logo" style={{height: '50px'}} />
+          <img src={logoSvg} alt="Masarat Talent Logo" style={{height: '50px'}} />
         </Link>
 
         {/* Desktop Nav */}
