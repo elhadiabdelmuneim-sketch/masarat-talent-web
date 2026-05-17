@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import founderPhoto from '../assets/founder.jpg'
 import './About.css'
 
 const values = [
@@ -38,7 +39,7 @@ export default function About() {
         <div className="container founder-inner">
           <div className="founder-photo-wrapper">
             <div className="founder-photo-placeholder">
-              <span className="founder-initials">AN</span>
+              <img src={founderPhoto} alt="Abdelmoneim Nooh" style={{width:'100%', height:'100%', objectFit:'cover', borderRadius:'12px'}} />
             </div>
             <div className="founder-credentials">
               <div className="cred-badge">Six Sigma Black Belt</div>
