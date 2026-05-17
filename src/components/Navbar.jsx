@@ -27,11 +27,7 @@ export default function Navbar() {
       <div className="container navbar__inner">
         {/* Logo */}
         <Link to="/" className="navbar__logo">
-          <span className="logo-mark">م</span>
-          <span className="logo-text">
-            <span className="logo-main">Masarat</span>
-            <span className="logo-sub">Talent</span>
-          </span>
+          <img src="/src/assets/logo.svg" alt="Masarat Talent Logo" style={{height: '50px'}} />
         </Link>
 
         {/* Desktop Nav */}
