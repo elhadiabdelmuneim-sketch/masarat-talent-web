@@ -11,8 +11,8 @@ const contacts = [
   {
     icon: '💼',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/abdelmoneim-nooh',
-    href: 'https://linkedin.com/in/abdelmoneim-nooh',
+    value: 'linkedin.com/in/engrabdelmoneim',
+    href: 'https://www.linkedin.com/in/engrabdelmoneim',
     hint: 'Connect with the founder',
   },
   {

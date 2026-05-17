@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div className="footer__links">
           <h4>Connect</h4>
-          <a href="https://linkedin.com/in/abdelmoneim-nooh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/company/masarat-talent/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="mailto:hello@masaratalent.com">hello@masaratalent.com</a>
           <a href="https://github.com/elhadiabdelmuneim-sketch/masarat-talent" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
