@@ -41,7 +41,8 @@ export default function Demo() {
 
   const isValid = () =>
     form.full_name && form.email && form.skills && form.location &&
-    form.work_auth && form.years_experience && form.english_level
+    form.work_auth && form.years_experience && form.english_level &&
+    form.salary_expectation && form.cv_link
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -215,7 +216,7 @@ export default function Demo() {
                   </div>
 
                   <div className="form-field">
-                    <label>Expected Salary (USD/month)</label>
+                    <label>Expected Salary (USD/month) *</label>
                     <input
                       type="number"
                       name="salary_expectation"
@@ -223,17 +224,19 @@ export default function Demo() {
                       onChange={onChange}
                       min="500"
                       placeholder="e.g. 2500"
+                      required
                     />
                   </div>
 
                   <div className="form-field">
-                    <label>CV Link</label>
+                    <label>CV Link *</label>
                     <input
                       type="url"
                       name="cv_link"
                       value={form.cv_link}
                       onChange={onChange}
                       placeholder="Google Drive or LinkedIn URL"
+                      required
                     />
                   </div>
                 </div>
